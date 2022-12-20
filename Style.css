@@ -78,3 +78,19 @@ table {
     display: block;
   }
 }
+
+.c {
+  position: relative;
+}
+.c::before {
+  content: "##";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+.c::after {
+  content: "##";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}

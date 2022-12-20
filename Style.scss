@@ -17,3 +17,11 @@
         display: block;
     }
 }
+.c{
+    @include beforeTL(50%, 10px){
+        content: '##';
+    }
+    @include afterTL(50%, 10px){
+        content: '##';
+    }
+}

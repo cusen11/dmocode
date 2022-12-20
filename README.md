@@ -39,6 +39,61 @@
 ```
     @include listE(margin,items);
     Ex: Give list 12 item 3 rows and 4 colums, margin right 10px
-    @include listE(10, 3)
+    .ex{
+        @include listE(10, 3)
+    }
+
+    Result: 
+
+        .ex {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            margin-right: 10;
+        }
+        .ex:nth-of-type(3n + 0) {
+            margin-right: 0;
+        }
+
+```
+
+
+## Befoce & After
+
+```
+    Variable :
+    TR = Top Right
+    TL = TOP Left
+    BR = Bottom Right
+    BL = Bottom Left
+    
+
+    before{variable}(value, value){
+        @content
+    }
+
+    Ex:  
+    .ex{
+        @include beforeTL(50%, 10px){
+            content: '##';
+        }
+    }
+
+    Result
+        .ex {
+            position: relative;
+        }
+        .ex::before {
+            content: "##";
+            position: absolute;
+            top: 50%;
+            left: 10px;
+        }
+
 ```
 

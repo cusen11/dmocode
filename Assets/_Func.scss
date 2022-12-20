@@ -30,4 +30,75 @@
 	@media screen and (min-width: #{$mobile}px) {
 		@content
 	} 
-} 
+};
+@mixin beforeTL($top,$left){ 
+	&::before{
+		@content; 
+		position: absolute; 
+		top: $top;
+		left: $left; 
+	}
+}
+@mixin beforeTR($top,$right){
+	position: relative;
+	&::before{
+		@content; 
+		position: absolute; 
+		top: $top;
+		right: $right; 
+	}
+}
+@mixin beforeBL($bottom,$left){
+	position: relative;
+	&::before{
+		@content; 
+		position: absolute; 
+		bottom: $bottom;
+		left: $left; 
+	}
+}
+@mixin beforeBR($bottom,$right){
+	position: relative;
+	&::before{
+		@content; 
+		position: absolute; 
+		bottom: $bottom;
+		right: $right; 
+	}
+}
+@mixin afterTL($top,$left){
+	position: relative;
+	&::after{
+		@content; 
+		position: absolute; 
+		top: $top;
+		left: $left; 
+	}
+}
+@mixin afterTR($top,$right){
+	position: relative;
+	&::after{
+		@content; 
+		position: absolute; 
+		top: $top;
+		right: $right; 
+	}
+}
+@mixin afterBL($bottom,$left){
+	position: relative;
+	&::after{
+		@content; 
+		position: absolute; 
+		bottom: $bottom;
+		left: $left; 
+	}
+}
+@mixin afterBR($bottom,$right){
+	position: relative;
+	&::after{
+		@content; 
+		position: absolute; 
+		bottom: $bottom;
+		right: $right; 
+	}
+}
