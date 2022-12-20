@@ -1,0 +1,13 @@
+@import './Assets/Func.scss';
+@import './Assets/Reset.scss';
+
+
+.a{
+    margin: tovw(10);
+    font-size: toem(10);
+    width: torem(10);
+    height: topt(10);
+}
+.b{
+    @include listE(10,4)
+}

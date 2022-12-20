@@ -1,0 +1,22 @@
+@import './Variable.scss';
+
+@function tovw($font){
+	@return ($font / $vw-viewport) * 100 + vw
+};
+@function torem($font){
+	@return ($font / $baseSize) + rem
+};
+@function toem($font){
+	@return ($font / $baseSize) + em
+};
+@function topt($font){
+	@return ($font * 0.75) + pt
+};
+@mixin listE($mRight, $item){
+	display: flex;
+	justify-content: flex-start; 
+	margin-right: $mRight;
+	&:nth-of-type(#{$item}n + 0){
+		margin-right:0
+	}
+}; 
