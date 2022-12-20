@@ -102,4 +102,36 @@ Variable.scss file:
         }
 
 ```
+## Responsive
+
+```
+    Max width: 
+        @include toMin(value){
+            @content
+        }
+        @include toMax(value){
+            @content
+        }
+
+    Ex:
+        .ex{
+            display: block;
+            @include toMax(758){
+                dispay:none
+            }
+        }
+
+    Result:
+
+        .ex{
+            display: block
+        }
+        @media screen and (min-width: 758px) {
+            .ex {
+                display: none;
+            }
+        }
+    
+
+```
 
