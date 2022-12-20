@@ -6,6 +6,12 @@
 - Styles.scss :              Chứa nội dung style
 - Reset.scss  :              Chứa nội dung reset css *nếu khách hàng có rồi thì xóa hết bên trong đi*
 ```
+# Config
+Variable.scss file:
+```
+   $vw-viewport: 375;  <!-- kích thước màng hình design mobie dùng cho vw -->
+    $baseSize: 16; <!-- Font size chuẩn dùng cho em và rem -->
+```
 
 # Use  
 
