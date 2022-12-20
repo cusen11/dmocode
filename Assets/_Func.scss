@@ -15,8 +15,19 @@
 @mixin listE($mRight, $item){
 	display: flex;
 	justify-content: flex-start; 
+	flex-wrap: wrap;
 	margin-right: $mRight;
 	&:nth-of-type(#{$item}n + 0){
 		margin-right:0
 	}
 }; 
+@mixin toMax($mobile) {     
+	@media screen and (max-width: #{$mobile}px) {
+		@content
+	} 
+};
+@mixin toMin($mobile) {     
+	@media screen and (min-width: #{$mobile}px) {
+		@content
+	} 
+} 

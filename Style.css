@@ -61,8 +61,20 @@ table {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-right: 10;
 }
 .b:nth-of-type(4n + 0) {
   margin-right: 0;
+}
+@media screen and (max-width: 200px) {
+  .b {
+    display: block;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .b {
+    display: block;
+  }
 }

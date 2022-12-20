@@ -9,5 +9,11 @@
     height: topt(10);
 }
 .b{
-    @include listE(10,4)
+    @include listE(10,4);
+    @include toMax(200){
+        display: block;
+    }
+    @include toMin(1000){
+        display: block;
+    }
 }
