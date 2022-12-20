@@ -9,8 +9,8 @@
 # Config
 Variable.scss file:
 ```
-    $vw-viewport: 375;  <!-- kích thước màng hình design mobie dùng cho vw -->
-    $baseSize: 16; <!-- Font size chuẩn dùng cho em và rem -->
+    $vw-viewport: 375;  // kích thước màng hình design mobie dùng cho vw 
+    $baseSize: 16; // Font size chuẩn dùng cho em và rem 
 ```
 
 # Use  
