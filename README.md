@@ -109,6 +109,7 @@ Variable.scss file:
         @include toMin(value){
             @content
         }
+    Min width:
         @include toMax(value){
             @content
         }
