@@ -127,7 +127,7 @@ Variable.scss file:
         .ex{
             display: block
         }
-        @media screen and (min-width: 758px) {
+        @media screen and (max-width: 758px) {
             .ex {
                 display: none;
             }
@@ -135,4 +135,46 @@ Variable.scss file:
     
 
 ```
+## Position
 
+```
+
+    @mixin center
+    @mixin centerX
+    @mixin centerY
+
+    Ex: 
+        .center{ 
+            @mixin center
+        }
+        .centerX{ 
+            @mixin centerX
+        }
+        .centerY{ 
+            @mixin centerY 
+        }
+    
+    Result
+        .center{ 
+            position: relative;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            position: absolute; 
+        }
+        .centerX{ 
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+        }
+        .centerY{ 
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+        }
+
+```

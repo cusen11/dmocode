@@ -24,4 +24,7 @@
     @include afterTL(50%, 10px){
         content: '##';
     }
+    @include center;
+    @include centerY;
+    @include centerX;
 }
