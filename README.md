@@ -18,36 +18,44 @@ Variable.scss file:
 ## PX to VW
 
 ```
-    tovw(value)
-    Ex: tovw(10) -->  2.3364485981vw
+    Syntax
+
+        tovw(value)
+        Ex: tovw(10) -->  2.3364485981vw
 ```
 ## PX to PT
 
-```
-    topt(value)
-    Ex: topt(10) -->  7.5pt
+``` 
+    Syntax
+        topt(value)
+        Ex: topt(10) -->  7.5pt
 ```
 ## PX to em
 
 ```
-    toem(value)
-    Ex: toem(10) -->  0.625em
+    Syntax
+        toem(value)
+        Ex: toem(10) -->  0.625em
 ```
 ## PX to rem
 
 ```
-    torem(value)
-    Ex: torem(10) -->  0.625rem
+    Syntax
+        torem(value)
+        Ex: torem(10) -->  0.625rem
 ```
 
 ## Gird list
 
 ```
-    @include listE(margin,items);
+    Syntax
+
+        @include listE(margin,items);
+
     Ex: Give list 12 item 3 rows and 4 colums, margin right 10px
-    .ex{
-        @include listE(10, 3)
-    }
+        .ex{
+            @include listE(10, 3)
+        }
 
     Result: 
 
@@ -73,22 +81,23 @@ Variable.scss file:
 
 ```
     Variable :
-    TR = Top Right
-    TL = TOP Left
-    BR = Bottom Right
-    BL = Bottom Left
-    
+        TR = Top Right
+        TL = TOP Left
+        BR = Bottom Right
+        BL = Bottom Left
 
-    before{variable}(value, value){
-        @content
-    }
+    Syntax
+
+        before{variable}(value, value){
+            @content
+        }
 
     Ex:  
-    .ex{
-        @include beforeTL(50%, 10px){
-            content: '##';
+        .ex{
+            @include beforeTL(50%, 10px){
+                content: '##';
+            }
         }
-    }
 
     Result
         .ex {
@@ -104,15 +113,16 @@ Variable.scss file:
 ```
 ## Responsive
 
-```
-    Max width: 
-        @include toMin(value){
-            @content
-        }
-    Min width:
-        @include toMax(value){
-            @content
-        }
+``` 
+    Syntax
+        Max width: 
+            @include toMin(value){
+                @content
+            }
+        Min width:
+            @include toMax(value){
+                @content
+            }
 
     Ex:
         .ex{
@@ -138,10 +148,11 @@ Variable.scss file:
 ## Position
 
 ```
+    Syntax
 
-    @mixin center
-    @mixin centerX
-    @mixin centerY
+        @mixin center
+        @mixin centerX
+        @mixin centerY
 
     Ex: 
         .center{ 
