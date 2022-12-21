@@ -150,9 +150,9 @@ Variable.scss file:
 ```
     Syntax
 
-        @mixin center
-        @mixin centerX
-        @mixin centerY
+        @include center
+        @include centerX
+        @include centerY
 
     Ex: 
         .center{ 
@@ -186,6 +186,33 @@ Variable.scss file:
             left: 50%;
             -webkit-transform: translateX(-50%);
                     transform: translateX(-50%);
+        }
+
+```
+
+
+#Text
+
+```
+    Syntax
+        @include indent(value)
+
+    Ex: 
+        .ex{
+            @include indent(10px)
+        }
+        .ex2{
+            @include indent(tovw(10))
+        }
+    Result
+    
+        .ex{
+            text-indent: -10px;
+	        margin-left: 10px;
+        }
+        .ex2{
+            text-indent: -2.3364485981vw;
+	        margin-left: 2.3364485981vw;
         }
 
 ```

@@ -94,6 +94,8 @@ table {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  text-indent: -10px;
+  margin-left: 10px;
 }
 .c::before {
   content: "##";

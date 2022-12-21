@@ -123,7 +123,7 @@
 	top: 50%;
 	transform: translateY(-50%);
 } 
-@mixin indent(){
-	text-indent: -1em;
-	margin-left: 1em;
+@mixin indent($value){
+	text-indent: -$value;
+	margin-left: $value;
 }
