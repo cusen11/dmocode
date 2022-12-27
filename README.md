@@ -191,7 +191,7 @@ Variable.scss file:
 ```
 
 
-#Text
+## Text
 
 ```
     Syntax
@@ -213,6 +213,26 @@ Variable.scss file:
         .ex2{
             text-indent: -2.3364485981vw;
 	        margin-left: 2.3364485981vw;
+        }
+
+```
+## Font Face
+```
+    Syntax
+        @include font($name,$url',$fontWeight) 
+    
+    Ex: 
+        @include font('Maryo','../abc/Maryo',300) 
+
+    Result:
+
+        @font-face {
+            font-family: "Maryo";
+            src: url("../abc/Maryo.eot");
+            src: url("../abc/Maryo.eot?#iefix") format("embedded-opentype"), url("../abc/Maryo.woff2") format("woff2"), url("../abc/Maryo.woff") format("woff"), url("../abc/Maryo.ttf") format("truetype"), url("../abc/Maryo.svg#../abc/Maryo") format("svg");
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
         }
 
 ```

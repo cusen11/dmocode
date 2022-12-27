@@ -127,3 +127,18 @@
 	text-indent: -$value;
 	margin-left: $value;
 }
+@mixin font($name, $url,$fontWeight){
+	@font-face {
+		font-family: $name;
+		src: url('#{$url}.eot');
+		src: url('#{$url}.eot?#iefix') format('embedded-opentype'),
+			url('#{$url}.woff2') format('woff2'),
+			url('#{$url}.woff') format('woff'),
+			url('#{$url}.ttf') format('truetype'),
+			url('#{$url}.svg##{$url}') format('svg');
+		font-weight: $fontWeight;
+		font-style: normal;
+		font-display: swap;
+	}
+	
+}

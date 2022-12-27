@@ -28,4 +28,5 @@
     @include centerY;
     @include centerX;
     @include indent(10px)
-}
+} 
+@include font('Maryo','../abc/Maryo',300) 
