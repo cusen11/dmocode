@@ -2,6 +2,7 @@
 @import './Assets/Reset.scss';
 
 
+@include font('Maryo','../abc/Maryo',300) ;
 .a{
     margin: tovw(10);
     font-size: toem(10);
@@ -27,6 +28,6 @@
     @include center;
     @include centerY;
     @include centerX;
-    @include indent(10px)
+    @include indent(10px);
+    @include fontFamily('Family', 300,"h1","p")
 } 
-@include font('Maryo','../abc/Maryo',300) 

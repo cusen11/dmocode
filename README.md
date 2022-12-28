@@ -216,7 +216,8 @@ Variable.scss file:
         }
 
 ```
-## Font Face
+## Font
+### font face
 ```
     Syntax
         @include font($name,$url',$fontWeight) 
@@ -234,5 +235,40 @@ Variable.scss file:
             font-style: normal;
             font-display: swap;
         }
+
+```
+### font family
+```
+    Syntax:
+        fontFamily($name,$fontWeight,$tag...)
+    
+    Ex:
+        .ex{
+            @include fontFamily('Family', 300,"h1","p")
+        }
+ 
+    Ex2:
+        @include fontFamily('FamilyHihi', 500,".class","#id")
+         
+        
+    
+    Result: 
+            .ex h1 {
+                font-family: "Family";
+                font-weight: 300;
+            }
+            .ex p {
+                font-family: "Family";
+                font-weight: 300;
+            } 
+            
+            .class {
+                font-family: "FamilyHihi";
+                font-weight: 500;
+            }
+            #id {
+                font-family: "FamilyHihi";
+                font-weight: 500;
+            }
 
 ```
