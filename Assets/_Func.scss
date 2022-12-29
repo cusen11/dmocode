@@ -142,8 +142,8 @@
 	}
 	
 }
-@mixin fontFamily($name,$fontWeight,$tag...){
-	@each $tag in $tag{
+@mixin fontFamily($name,$fontWeight,$tags...){
+	@each $tag in $tags{
 		#{$tag}{
 			font-family: $name;
 			font-weight: $fontWeight;
