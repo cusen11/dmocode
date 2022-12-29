@@ -101,11 +101,7 @@
 		bottom: $bottom;
 		right: $right; 
 	}
-}
-@mixin centerX{
-	left: 50%;
-	transform: translateX(-50%);
-} 
+}  
 @mixin center{
 	position: absolute;
 	top: 50%;
