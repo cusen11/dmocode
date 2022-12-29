@@ -219,6 +219,9 @@ Variable.scss file:
 ## Font
 ### font face
 ```
+    Lưu ý: font cần thực hiện đổi đuôi ttf sang tất cả các định dạng khác để không bị lỗi font ở các trình duyệt or file svg tại website:
+    https://transfonter.org/.
+    TTF,WOFF,WOFF2,SVG,EOT
     Syntax
         @include font($name,$url',$fontWeight) 
     
