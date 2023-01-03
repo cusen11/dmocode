@@ -45,34 +45,73 @@ Variable.scss file:
         Ex: torem(10) -->  0.625rem
 ```
 
-## Gird list
+## Grid 
 
 ```
-    Syntax
+    
+    - List
+        Syntax
 
-        @include listE(margin,items);
+            @include listE(margin,items);
 
-    Ex: Give list 12 item 3 rows and 4 colums, margin right 10px
-        .ex{
-            @include listE(10, 3)
-        }
+        Ex: Give list 12 item 3 rows and 4 colums, margin right 10px
+            .ex{
+                @include listE(10, 3)
+            }
 
-    Result: 
+        Result: 
 
-        .ex {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: start;
-                -ms-flex-pack: start;
-                    justify-content: flex-start;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-            margin-right: 10;
-        }
-        .ex:nth-of-type(3n + 0) {
-            margin-right: 0;
-        }
+            .ex {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                        justify-content: flex-start;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                margin-right: 10;
+            }
+            .ex:nth-of-type(3n + 0) {
+                margin-right: 0;
+            }
+    - Grid
+        Variable : 
+			wr: wrap;  
+			nwr: nowrap;  
+			jstart: flex-start;  
+			jc: center;  
+			jend: flex-end;  
+			jbw: space-between;  
+			jar: space-around;  
+			als: flex-start;  
+			alc: center;  
+			ale: flex-end;  
+			cl: column;  
+			clr: column-reverse;  
+			r: row;  
+			rr: row-reverse; 
+        Syntax
+            @include(@value...)
+        Normal css
+            .ex {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+            }
+        In new Syntax
+            @include grid('wr','cl','jar','alc')
 
 ```
 

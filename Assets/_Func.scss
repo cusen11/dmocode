@@ -21,6 +21,53 @@
 		margin-right:0
 	}
 }; 
+@mixin grid($values...){
+	display: flex;
+	@each $value in $values{
+		@if $value == 'wr'{
+			flex-wrap: wrap;
+		}
+		@if $value == 'nwr'{
+			flex-wrap: nowrap;
+		}
+		@if $value == 'jstart'{
+			justify-content: flex-start;
+		}
+		@if $value == 'jc'{
+			justify-content: center;
+		}
+		@if $value == 'jend'{
+			justify-content: flex-end;
+		}
+		@if $value == 'jbw'{
+			justify-content: space-between;
+		}
+		@if $value == 'jar'{
+			justify-content: space-around;
+		}
+		@if $value == 'als'{
+			align-items: flex-start;
+		}
+		@if $value == 'alc'{
+			align-items: center;
+		}
+		@if $value == 'ale'{
+			align-items: flex-end;
+		}
+		@if $value == 'cl'{
+			flex-direction: column;
+		}
+		@if $value == 'clr'{
+			flex-direction: column-reverse;
+		}
+		@if $value == 'r'{
+			flex-direction: row;
+		}
+		@if $value == 'rr'{
+			flex-direction: row-reverse;
+		} 
+	} 
+}
 @mixin toMax($mobile) {     
 	@media screen and (max-width: #{$mobile}px) {
 		@content

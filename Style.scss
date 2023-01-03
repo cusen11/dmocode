@@ -31,3 +31,6 @@
     @include indent(10px);
     @include fontFamily('Family', 300,"h1","p")
 } 
+.d{
+    @include grid('wr','cl','jar','alc')
+} 
