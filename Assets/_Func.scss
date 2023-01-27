@@ -16,7 +16,9 @@
 	display: flex;
 	justify-content: flex-start; 
 	flex-wrap: wrap;
-	margin-right: #{$mRight}px;
+	#{$child}{
+		margin-right: #{$mRight}px;
+	}
 	#{$child}:nth-of-type(#{$item}n + 0){
 		margin-right:0
 	}
