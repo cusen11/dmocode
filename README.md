@@ -56,7 +56,7 @@ Variable.scss file:
 
         Ex: Give list 12 item 3 rows and 4 colums, margin right 10px
             .ex{
-                @include listE(10, 3,.class)
+                @include listE(10, 3,class)
             }
 
         Result: 
