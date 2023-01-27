@@ -73,7 +73,7 @@ table {
       flex-wrap: wrap;
 }
 .b img {
-  margin-right: 10px;
+  margin-right: 10;
 }
 .b img:nth-of-type(4n + 0) {
   margin-right: 0;
