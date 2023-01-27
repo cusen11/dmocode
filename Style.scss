@@ -10,7 +10,7 @@
     height: topt(10);
 }
 .b{
-    @include listE(10,4);
+    @include listE(10,4,img);
     @include toMax(200){
         display: block;
     }

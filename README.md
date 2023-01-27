@@ -52,11 +52,11 @@ Variable.scss file:
     - List
         Syntax
 
-            @include listE(margin,items);
+            @include listE(margin,items,classChild);
 
         Ex: Give list 12 item 3 rows and 4 colums, margin right 10px
             .ex{
-                @include listE(10, 3)
+                @include listE(10, 3,.class)
             }
 
         Result: 
@@ -72,7 +72,7 @@ Variable.scss file:
                     flex-wrap: wrap;
                 margin-right: 10;
             }
-            .ex:nth-of-type(3n + 0) {
+            .ex .class:nth-of-type(3n + 0) {
                 margin-right: 0;
             }
     - Grid
